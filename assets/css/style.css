@@ -14,22 +14,54 @@ main {
   width: 90%;
   max-width: 900px;
   margin: 2rem auto;
+  text-align: center;
 }
 
 header {
   background-color: #d32f2f;
-  height: 350px;
+  height: 400px;
   clip-path: ellipse(110% 100% at 50% 0%);
 }
 
-.opcoes{
-    text-align: center;
+.topo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #7708085b;
+  font-family: "Unkempt", cursive;
+  font-weight: 650;
+  letter-spacing: 3px;
+}
+
+.topo a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 0.75rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 1rem;
 }
 
 #intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #f0f0f0;
-  text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #intro p{
@@ -43,27 +75,39 @@ header {
 #intro h1{
   font-family: "Unkempt", cursive;
   font-weight: 700;
+  font-size: 1.5rem;
   letter-spacing: 0.25rem;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  flex-wrap: wrap;
-  border-bottom: 2px solid #7708085b;
+#intro img{
+  height: auto;
+  max-width: 250px;
 }
 
-.menu a {
+.botoes{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.botoes a{
   text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.cardapio{
+  color: #d32f2f;
+  background-color: #f0f0f0;
+}
+
+.pedido{
   color: #f0f0f0;
-  padding: 1rem;
-  font-family: "Unkempt", cursive;
-  font-weight: 700;
-  letter-spacing: 3px;
+  background-color: #388E3C;
 }
 
 .cards{
@@ -72,21 +116,32 @@ header {
     gap: 1rem;
 }
 
-.card{
-    padding: 1.5rem;
-    border: 1px solid #388E3C;
-    border-radius: 10px;
-    margin: 0.75rem;
+.card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.card h2{
-    margin-top: 0;
-    padding: 0.20rem;
-    border-bottom: 1px dotted #005304;
+.card{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px #1b4d3e26;
+}
+
+.card h3{
+  color: #1b4d3e;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  border-bottom: 1px dotted #005304;
 }
 
 .card p{
-    margin-bottom: 0;
+  margin-bottom: 0;
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 #localizacao {
