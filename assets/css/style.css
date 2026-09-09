@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #212121;
+  font-family: "Unkempt", cursive;
+  font-weight: 400;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+header {
+  background-color: #d32f2f;
+  height: 350px;
+  clip-path: ellipse(110% 100% at 50% 0%);
+}
+
+.opcoes{
+    text-align: center;
+}
+
+#intro {
+  color: #f0f0f0;
+  text-align: center;
+  padding: 2rem;
+}
+
+#intro p{
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#intro h1{
+  font-family: "Unkempt", cursive;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #7708085b;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 0.5rem 2rem;
+  font-family: "Unkempt", cursive;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    padding: 1.5rem;
+    border: 1px solid #388E3C;
+    border-radius: 10px;
+    margin: 0.75rem;
+}
+
+.card h2{
+    margin-top: 0;
+    padding: 0.20rem;
+    border-bottom: 1px dotted #005304;
+}
+
+.card p{
+    margin-bottom: 0;
+}
+
+#localizacao{
+    border: 1px solid #388E3C;
+    border-radius: 10px;
+    margin: 0.75rem;
+    text-align: center;
+    line-height: 12px;
+}
+
+footer{
+    background-color: #d32f2f;
+    color: #f0f0f0;
+    height: 100px;
+    clip-path: ellipse(110% 100% at 50% 100%);
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
